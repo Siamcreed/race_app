@@ -1,0 +1,20 @@
+<!-- app/views/cars/index.html.erb -->
+<h1>Cars</h1>
+
+<table>
+<tr>
+<th>Car</th>
+<th>brand_name</th>
+<th>downforce</th>
+<th>top_speed</th>
+</tr>
+
+<% @cars.each do |car| %>
+  <tr>
+  <td><%= car.brand_name%></td>
+  <td><%= car.downforce %></td>
+  <td><%= car.top_speed%></td>
+  <td><%= %></td>
+  </tr>
+  <% end %>
+</table>
