@@ -1,1 +1,14 @@
 <h1><%= @car.brand_name %></h1>
+
+<br><br>
+
+<% if @driver %>
+  <div class='row'>
+    <strong><%= @driver.first_name %></strong>
+    <em><%= @driver.lastname %></em>
+  </div>
+<% else %>
+  <div class='row'>
+    <strong>No driver assigned</strong>
+  </div>
+<% end %>
